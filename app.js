@@ -72,6 +72,10 @@ const booksList = [
     }
 ];
 app.get('/', (req, res) => {
+    res.send("Hello world")
+})
+
+app.get('/book', (req, res) => {
     res.json(booksList).status(200);
 })
 
